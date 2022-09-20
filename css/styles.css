@@ -4,6 +4,7 @@
   /* text color */
   --main-text-cl: #212121;
   --akcent-cl: #2196f3;
+  --text-modal-cl:#757575;
 
   /* background color*/
   --main-background-cl: #ffffff;
@@ -335,9 +336,10 @@ border-radius: 4px;
 }
 .modal-close {
   position: absolute;
-  margin: 9px;
   
-
+}
+.modal-close:hover {
+  fill: var(--akcent-cl);
 
 }
 .description {
@@ -680,7 +682,7 @@ border-radius: 4px;
   cursor: pointer;
   height:50px;
   width: 200px;
-  align-items: baseline;
+
 }
 .icon-send{
 
@@ -696,22 +698,95 @@ input::placeholder{
 /**************************
 ***Modal window************
 ***************************/
+
+.order-form-title{
+  font-family: var(--main-font);
+  font-size: 20px;
+  color: var(--main-text-cl);
+
+
+}
+.order-title{
+  text-align: center;
+  margin-bottom: 12px;
+}
 label{
   display: block;
 }
-.order-form-group{
-  padding:12px 40px 20px 40px ;
+.order-form{
+  padding:40px 40px 0px 40px ;
+}
+
+.order-form-name{
+font-family: var(--main-font);
+font-size: 12px;
+color:var(--text-modal-cl)
+}
+.form-field{
+  position: relative;
+  margin-bottom: 10px;
+  
 }
 
 .order-form-field{
-  position: relative;
-}
-.modal-icon{
-  position: absolute;
+  margin-bottom: 4px;
+  
 }
 .modal-input{
-  position: relative;
+width: 448px;
+height:40px;
+border-radius: 4px;
+border: 1px solid var(--text-modal-cl);
+font: inherit;
+cursor: pointer;
+outline:none;
 }
 .modal-icon{
   position: absolute;
+  top:50%;
+  left: 12px;
+  cursor: pointer;
 }
+.modal-input:focus,
+.modal-textarea:focus{
+  border: 1px solid var(--akcent-cl);
+}
+.modal-input:focus ~ .modal-icon {
+  fill:var(--akcent-cl);
+}
+.modal-textarea{
+  width: 448px;
+  height:120px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--text-modal-cl);
+  outline:none;
+  cursor: pointer;
+}
+
+textarea::placeholder{
+  padding-top: 12px;
+  padding-left: 16px;
+}
+.form-checkbox{
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.form-checkbox-text{
+  color: var(--text-modal-cl);
+  font-family: var(--main-font);
+  font-size: 14px;
+
+}
+.terms{
+  color: var(--akcent-cl);
+}
+.btn-modal{
+padding: 0;
+margin-right: 164px;;
+margin-left: 164px;
+margin-bottom: 40px;
+
+}
+.
