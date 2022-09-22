@@ -691,12 +691,8 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: none;
   padding: 10px 28px;
-  display: block;
-}
-.btn-text-icon{
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 input::placeholder{
